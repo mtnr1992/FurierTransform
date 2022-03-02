@@ -1,0 +1,32 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[exitFunc]
+Class="Function"
+Prototype="int exitFunc(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[calculate]
+Class="Function"
+Prototype="void calculate();"
+
+[draw]
+Class="Function"
+Prototype="void draw();"
+
+[Start]
+Class="Function"
+Prototype="int Start(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Change]
+Class="Function"
+Prototype="int Change(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Tick]
+Class="Function"
+Prototype="int Tick(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[numOfMass]
+Class="Function"
+Prototype="int numOfMass(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

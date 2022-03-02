@@ -1,0 +1,43 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2017\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2017\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "Spring.c" = "e:\\CVI\\matan" ;
+Object "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.obj" : "e:\\CVI\\matan\\Spring.c" ;
+FILENUM on "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.obj" = 1 ;
+DEFPROTS on "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.obj" = "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.obj.cvidefprots" ;
+OUTFILE on "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.obj" = "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.obj.out" ;
+PrjObjects += "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.obj" ;
+Object "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\resources.res" : "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\resources.in.rc" ;
+Depends "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\resources.res" : "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\manifest.xml" ;
+MainFromObjects "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.exe" : "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\link_options.txt" ;
+Depends "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.exe" : "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\resources.res" ;
+Depends all : "e:\\CVI\\matan\\cvibuild.Spring\\Debug\\Spring.exe" ;
